@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --gradient: linear-gradient(
+        to right,
+        rgb(204, 204, 255),
+        rgb(247, 238, 238)
+    )
+}
+
+@font-face {
+    font-family: 'SF-Pro-Display-Light'; 
+    src: url('./fonts/SF-Pro-Display-Light.ttf'); 
+}
+
+section .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav ul{
+    list-style: none;
+
+    display:flex;
+    gap: 2rem;
+    align-items: center;
+
+    position: fixed;
+    background-color: rgb(77, 77, 82);
+    height: 3rem;
+    width: 100%;
+
+
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: space-evenly;
+
+}
+
+header nav li a{
+    color: rgba(245, 243, 243, 0.918);
+    text-decoration: none;
+}
+
+header nav li a:hover{
+    color: #ffffff;
+}
+
+section{
+    min-height: 100vh;
+}
+
+header,
+p{
+    font-family: 'SF-Pro-Display-Light'; 
+}
+
+#launch{
+    background: linear-gradient(30deg,
+     black 40%,#919090 );
+}
+
+#launch p,
+#notebook p{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#launch p{
+    color: #ffffff;
+}
+
+#launch h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 38px;
+    text-align: center;
+
+    padding-top: 10%;
+
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+ul{
+    font-family: 'SF-Pro-Display-Light'; 
+    font-size: 20px;
+}
+
+.about-product {
+    padding-left: 43%;
+    padding-top: 15px;
+}
+
+.about-product li{
+    display: inline;
+    margin-right: 5%;
+}
+
+.about-product li a{
+    color: #06c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-product li a:hover{
+    text-decoration:underline;
+}
+
+#launch img{
+    height: 50%;
+    padding-left: 6vw;
+    align-items: flex-end;
+}
+
+#notebook{
+    background-color: #fbfbfd;
+}
+
+#notebook h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 38px;
+    padding-left: 30px;
+    text-align: center;
+
+    padding-top: 5%;
+
+    color: #1d1d1f;
+}
+
+#notebook p{
+    color: #1d1d1f;
+}
+
+#notebook .about-product {
+    padding-bottom: 6vh;
+}
+
+#notebook img{
+    height: 700px;
+    padding-left: 12vw;
+    align-items: center;
+}
+
+#acessories{
+    background-color: #1d1d1f;
+    min-height: fit-content;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    padding: 15px;
+    grid-gap: 15px;
+}
+.card{
+    background-color: #fbfbfd;
+}
+
+#acessories .about-product{
+    padding-bottom: 15px;
+}
+
+#acessories .container{
+    display: inline;
+}
+
+#acessories img{
+    width: 75%;
+    height: 70%;
+    display: block;
+    padding-left: 25%;
+}
+
+.details{
+    padding: 20px 10px;
+}
+.details h3{
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 600;
+    font-size: 38px;
+    margin: 10px 0 15px 0;
+}
+.details p{
+    color: #a0a0a0;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#contact{
+    min-height: 50vh;
+}
+
+#contact h2,
+#contact h3,
+input, 
+textarea{
+    font-family: 'Roboto', sans-serif;
+}
+
+#contact h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.social-links img{
+    height: 24px;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a{
+    text-decoration: none;
+}
+
+#contact .container{
+    display: block;
+}
+
+.way{
+    padding-top: 35vh;
+}
+
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+
+}
+
+form button{
+    background-color: #919090;
+    color: #fbfbfd;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #505050;
+    transform: scale(1.02);
+}
+
+input:focus , textarea:focus{
+    outline-color:#1d1d1f;
+}
+
+
+footer {
+    background-color:#1d1d1f;
+    color: #fbfbfd;
+    padding: 20px 0;
+}
+
